@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precios Vigilados</title>
+    <!-- Linkeamos estilos CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Linkeamos Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo-title">
+          <i class="fa-solid fa-hand-holding-dollar logo"></i>
+          <h1 class="precios-vigilados-grad">Precios Vigilados</h1>
+        </div>
+        <input type="checkbox" id="toggle-menu" />
+        <ul class="navbar-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#funciones">Funciones</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#about-us">Sobre Nosotros</a></li>
+          <li><a href="#contactanos">Contáctanos</a></li>
+          <li><a href="#login" class="btn-login" id="log">Login</a></li>
+        </ul>
+        <label for="toggle-menu" class="menu-label">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="blur-screen"></div>
+      </nav>
+    </header>
+    <main class="main">
+      <section id="hero">
+        <div class="hero-text">
+          <h2 class="hero-text-title">Precios Vigilados</h2>
+          <p class="hero-text-sub">
+            Control y comparacion de precios más facil que nunca. Con nuestra
+            aplicación, usted será capaz de comparar
+            <span class="purple-span">precios</span> entre distintas cadenas de
+            supermercados para conocer cual es el mejor
+            <span class="purple-span">precio</span>, rapido, sencillo y en
+            cualquier lugar!
+          </p>
+        </div>
+        <img
+          src="./assets/hero-img.png"
+          alt="Imagen de mercado"
+          class="hero-text-image"
+        />
+      </section>
+      <section id="funciones">
+        <h2>Multiples funciones, un solo lugar!</h2>
+        <div class="funciones-cards-container">
+          <div class="funciones-card primera glass">
+            <img
+              src="./assets/card1.png"
+              alt="Imagen de comparacion de cadenas"
+              class="img-card-one"
+            />
+            <h3>Compare Cadenas</h3>
+            <p>
+              Multiples <span class="light-purple-span">precios</span> a traves
+              de multiples supermercados, ya no tiene que buscar a traves de
+              cada pagina, ahora todo esta en un mismo lugar.
+            </p>
+          </div>
+          <div class="funciones-card glass">
+            <img src="./assets/card2.png" alt="" class="img-card-two" />
+            <h3>Analize las Ofertas</h3>
+            <p>
+              Puede generar graficos para ver la tendencia de los articulos así
+              como su historial de
+              <span class="light-purple-span">precios</span>, asi podra
+              visualizar su variacion e incluso obtener estimados futuros.
+            </p>
+          </div>
+          <div class="funciones-card tercera glass">
+            <img src="./assets/card3.png" alt="" class="img-card-three" />
+            <h3>Comparta conocimiento</h3>
+            <p>
+              Encontró un supermercado que tiene buenas ofertas? Compartalo con
+              el resto de la comunidad para que todos podamos aprovecharlo!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="planes">
+        <h2>Elija su plan para empezar!</h2>
+        <div class="planes-cards-container">
+          <!-- Card 1 -->
+          <div class="planes-card glass">
+            <div class="planes-card-price-name">
+              <h3>Plan Bronce</h3>
+              <p>$0 Ars</p>
+            </div>
+            <ul class="planes-card-beneficios">
+              <li>
+                <i class="fa-solid fa-check"></i>Acceso a las principales
+                funciones
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>Tiempos de carga normales
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>Publicidades cada cierto tiempo
+              </li>
+            </ul>
+            <button>Seleccionar</button>
+          </div>
+          <!-- Card 2 -->
+          <div class="planes-card glass">
+            <div class="planes-card-price-name">
+              <h3>Plan Plata</h3>
+              <p>$400 Ars</p>
+            </div>
+            <ul class="planes-card-beneficios">
+              <li>
+                <i class="fa-solid fa-check"></i>Acceso a las principales
+                funciones
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>Tiempos de carga acelerados
+              </li>
+              <li><i class="fa-solid fa-check"></i>Ninguna Publicidad</li>
+            </ul>
+            <button>Seleccionar</button>
+          </div>
+          <!-- Card 3 -->
+          <div class="planes-card glass">
+            <div class="planes-card-price-name">
+              <h3>Plan Oro</h3>
+              <p>$800 Ars</p>
+            </div>
+            <ul class="planes-card-beneficios">
+              <li>
+                <i class="fa-solid fa-check"></i>Acceso a a todas las funciones
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>Tiempos de carga ultra
+                acelerados
+              </li>
+              <li><i class="fa-solid fa-check"></i>Ninguna Publicidad</li>
+            </ul>
+            <button>Seleccionar</button>
+          </div>
+        </div>
+        <p class="disclaimer">
+          Nota: Corresponde a suscripcion mensual, no incluye impuestos
+        </p>
+      </section>
+      <section id="about-us">
+        <div class="about-us-text">
+          <h2>Por ahorradores, para ahorradores</h2>
+          <p>
+            <span class="precios-vigilados-grad">Precios Vigilados</span> nació
+            como una solución ante la volatilidad de los precios de los
+            productos cotidianos. Ante situaciones comunes donde la misma compra
+            puede tener costos diferentes en distintos establecimientos, nuestro
+            propósito es facilitar ahorros adicionales mediante la comparación
+            de precios y la optimización del gasto, priorizando la economía del
+            consumidor.
+          </p>
+        </div>
+        <img
+          src="./assets/about-us-img.png"
+          alt="Imagen de ahorradores"
+          class="about-us-imagen"
+        />
+      </section>
+      <section id="contactanos">
+        <div class="contactanos-text-container">
+          <h2 class="main-title">Tenes alguna inquietud? Contactanos!</h2>
+          <p class="normal-paragraph">
+            Si tenes alguna sugerencia o si por alguna razon queres contactarte
+            con nosotros podras hacerlo por los siguientes metodos!
+          </p>
+        </div>
+        <div class="contactanos-metodos-container">
+          <div class="contactanos-metodos-online glass">
+            <h3>Online</h3>
+            <form class="formulario">
+              <div class="formulario-nombre">
+                <label for="name">Nombre:</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Ingrese su nombre aqui..."
+                />
+              </div>
+              <div class="formulario-correo">
+                <label for="email">Correo:</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Ingrese su correo aqui..."
+                />
+              </div>
+              <div class="formulario-mensaje">
+                <label for="mensaje">Mensaje:</label>
+                <textarea
+                  id="mensaje"
+                  cols="33"
+                  rows="10"
+                  placeholder="Escriba su mensaje aqui..."
+                ></textarea>
+              </div>
+            </form>
+            <input type="submit" class="enviar" />
+          </div>
+          <div class="contactanos-metodos-presencial glass">
+            <h3>Presencial</h3>
+            <p>
+              Carlos Casares 4768, B1765MZV Gregorio de Laferrere, Provincia de
+              Buenos Aires
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.1427073802997!2d-58.58945988858866!3d-34.72679707279737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc5c5370c1893%3A0x8a951fcb9370036!2sCarlos%20Casares%204768%2C%20B1765MZV%20Gregorio%20de%20Laferrere%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1709608285238!5m2!1ses-419!2sar"
+              class="mapa"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="#" class="footer-main-page-link"
+        ><h4>Precios Vigilados Ltd.</h4></a
+      >
+      <ul class="footer-links">
+        <li><a href="#">Politicas de uso</a></li>
+        <li><a href="#">Trabaja con nosotros</a></li>
+        <li><a href="#">Soporte</a></li>
+      </ul>
+      <div class="footer-redes">
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

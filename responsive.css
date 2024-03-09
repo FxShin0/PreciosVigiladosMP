@@ -1,0 +1,327 @@
+/* Reducir tamaño de letras en general */
+@media (max-width: 1230px) {
+  /* Navbar */
+  .logo-title h1 {
+    font-size: 30px;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  .navbar-list li > a {
+    font-size: 15px;
+  }
+  /* Hero */
+  .hero-text-title {
+    font-size: 70px;
+  }
+  .hero-text-image {
+    height: 270px;
+  }
+  .hero-text-sub {
+    font-size: 30px;
+  }
+  /* Funciones */
+  #funciones h2 {
+    font-size: 50px;
+  }
+  .funciones-card {
+    width: 280px;
+    height: 360px;
+  }
+  .funciones-card h3 {
+    font-size: 22px;
+  }
+  .funciones-card p {
+    font-size: 15px;
+  }
+  .funciones-cards-container {
+    gap: 30px;
+  }
+  .img-card-two {
+    left: -25px;
+  }
+  .img-card-three {
+    left: -20px;
+  }
+  /* Planes */
+  #planes h2 {
+    font-size: 50px;
+  }
+  .planes-card {
+    width: 280px;
+    height: 420px;
+  }
+  .planes-card-price-name h3 {
+    font-size: 30px;
+  }
+  .planes-card-price-name p {
+    font-size: 30px;
+  }
+  .planes-card-beneficios {
+    font-size: 18px;
+  }
+  /* Sobre nosotros */
+  .about-us-text h2 {
+    font-size: 50px;
+  }
+  .about-us-text p {
+    font-size: 23px;
+  }
+  .about-us-imagen {
+    width: 30%;
+  }
+  /* Contactanos */
+  .contactanos-text-container h2 {
+    font-size: 50px;
+  }
+  .contactanos-text-container p {
+    font-size: 23px;
+  }
+}
+/* Cambio de gap en funciones y planes container para acomodar mejor el posicionamiento por el wrap, implementacion de menu hamburguesa */
+@media (max-width: 980px) {
+  /* Menu */
+  body {
+    overflow-x: hidden;
+  }
+  .navbar-list {
+    position: absolute;
+    z-index: 2;
+    top: 65px;
+    right: 0;
+    width: 300px;
+    height: calc(100vh - 65px);
+    background-image: linear-gradient(
+      to right bottom,
+      #000000,
+      #030001,
+      #060104,
+      #080107,
+      #09020a,
+      #0c020f,
+      #0d0213,
+      #0e0317,
+      #11021c,
+      #130121,
+      #140127,
+      #15002c
+    );
+    border-left: solid 2px var(--light-bg);
+    box-shadow: 0px 2px 5px 0px rgba(236, 187, 255, 0.75);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(236, 187, 255, 0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(236, 187, 255, 0.75);
+    border-radius: 0px 0px 0px 10px;
+    -webkit-border-radius: 0px 0px 0px 10px;
+    -moz-border-radius: 0px 0px 0px 10px;
+    -ms-border-radius: 0px 0px 0px 10px;
+    -o-border-radius: 0px 0px 0px 10px;
+    padding: 45px 30px;
+    gap: 40px;
+    flex-direction: column;
+  }
+  .menu-label {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    gap: 8px;
+    position: relative;
+  }
+  .menu-label:hover {
+    cursor: pointer;
+  }
+  .menu-label span {
+    height: 3px;
+    width: 40px;
+    background-color: white;
+    transition: all 0.4s ease;
+  }
+  #toggle-menu:checked ~ .menu-label span:nth-child(1) {
+    position: absolute;
+    top: 6px;
+    transform: rotate(135deg);
+  }
+  #toggle-menu:checked ~ .menu-label span:nth-child(2) {
+    opacity: 0;
+  }
+  #toggle-menu:checked ~ .menu-label span:nth-child(3) {
+    position: absolute;
+    top: 6px;
+    transform: rotate(225deg);
+  }
+  .navbar-list li > a {
+    font-size: 25px;
+    font-weight: 200;
+  }
+  #toggle-menu:checked + .navbar-list {
+    display: flex;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    opacity: 1;
+  }
+  .navbar-list {
+    transform: translateX(150%);
+    -webkit-transform: translateX(150%);
+    -moz-transform: translateX(150%);
+    -ms-transform: translateX(150%);
+    -o-transform: translateX(150%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  #toggle-menu:checked ~ .blur-screen {
+    display: flex;
+  }
+  /* Hero */
+  .hero-text-title {
+    font-size: 50px;
+  }
+  .hero-text-sub {
+    font-size: 25px;
+  }
+  /* Funciones */
+  .funciones-cards-container {
+    gap: 70px;
+  }
+  /* Planes */
+  .planes-cards-container {
+    gap: 40px;
+  }
+  /* Sobre nosotros */
+  #about-us {
+    flex-direction: column;
+  }
+  .about-us-text {
+    width: 70%;
+  }
+  .about-us-imagen {
+    width: 50%;
+  }
+}
+/* Cambios en las cards de contactanos y en el hero*/
+@media (max-width: 870px) {
+  /* Hero */
+  #hero {
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+  }
+  .hero-text {
+    width: 70%;
+  }
+  /* Contactanos */
+  .contactanos-metodos-online {
+    /* background: var(--dark-bg); */
+    height: 370px;
+    width: 290px;
+  }
+  .contactanos-metodos-online h3 {
+    font-size: 30px;
+  }
+  .formulario {
+    font-size: 15px;
+  }
+  .enviar {
+    font-size: 15px;
+  }
+  .contactanos-metodos-presencial {
+    height: 370px;
+    width: 290px;
+    justify-content: space-around;
+    gap: 0px;
+  }
+  .contactanos-metodos-presencial h3 {
+    font-size: 30px;
+  }
+  .contactanos-metodos-presencial p {
+    font-size: 17px;
+  }
+  .mapa {
+    width: 80%;
+    height: 50%;
+  }
+}
+/* Cambios en el footer y flex-direction de secciones*/
+@media (max-width: 690px) {
+  /* Footer */
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 5px;
+  }
+  /* Funciones */
+  .funciones-cards-container {
+    flex-direction: column;
+    gap: 80px;
+  }
+  #funciones h2 {
+    font-size: 40px;
+  }
+  .funciones-card h3 {
+    font-size: 30px;
+  }
+  .funciones-card p {
+    font-size: 18px;
+  }
+  .img-card-two {
+    left: -25px;
+  }
+  .img-card-three {
+    left: -20px;
+    top: -100px;
+  }
+  /* Planes */
+  .planes-cards-container {
+    flex-direction: column;
+  }
+  /* Contactanos */
+  .contactanos-metodos-container {
+    flex-direction: column;
+  }
+}
+/* Cambios al hero y al navbar */
+@media (max-width: 468px) {
+  /* Hero */
+  .hero-text-title {
+    white-space: wrap;
+  }
+  .hero-text-sub {
+    font-size: 20px;
+  }
+  .hero-text {
+    width: 85%;
+  }
+  /* Navbar */
+  .logo-title h1 {
+    font-size: 25px;
+  }
+  .logo {
+    font-size: 25px;
+  }
+  .menu-label span {
+    height: 2px;
+    width: 30px;
+  }
+  /* Sobre nosotros */
+  .about-us-text {
+    width: 85%;
+  }
+  .about-us-text h2 {
+    font-size: 40px;
+  }
+  .about-us-text p {
+    font-size: 20px;
+  }
+  .about-us-imagen {
+    display: none;
+  }
+}
+/* La pagina se adapta correctamente hasta un ancho de 360px */
