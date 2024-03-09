@@ -324,4 +324,146 @@
     display: none;
   }
 }
-/* La pagina se adapta correctamente hasta un ancho de 360px */
+/* Cambios generales para anchos minimos */
+@media (max-width: 370px) {
+  /* Cambios a fuentes de secciones */
+  .hero-text-title,
+  #funciones h2,
+  #planes h2,
+  .about-us-text h2,
+  .contactanos-text-container h2 {
+    font-size: 30px;
+  }
+  .hero-text-sub,
+  .about-us-text p,
+  .contactanos-text-container p,
+  .disclaimer {
+    font-size: 16px;
+  }
+  /* Navbar */
+  .logo-title h1 {
+    font-size: 20px;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .menu-label span {
+    width: 25px;
+  }
+  .menu-label {
+    gap: 5px;
+  }
+  /* Hero  */
+  #hero img {
+    width: 230px;
+  }
+  /* Funciones */
+  #funciones {
+    padding: 0px 15px;
+  }
+  .funciones-card {
+    width: 200px;
+    height: 280px;
+    padding: 60px 10px 0px 10px;
+  }
+  .funciones-card h3 {
+    font-size: 22px;
+  }
+  .funciones-card p {
+    font-size: 12px;
+  }
+  .img-card-one {
+    left: 0px;
+  }
+  .img-card-two {
+    left: -20px;
+  }
+  .img-card-three {
+    left: -16px;
+    top: -90px;
+  }
+  /* Planes */
+  #planes h2 {
+    font-size: 40px;
+  }
+  .planes-card {
+    width: 200px;
+    height: 370px;
+  }
+  .planes-card-price-name h3,
+  .planes-card-price-name p {
+    font-size: 25px;
+  }
+  .planes-card-beneficios {
+    font-size: 14px;
+  }
+  /* Contactanos */
+  .contactanos-metodos-online {
+    /* background: var(--dark-bg); */
+    height: 330px;
+    width: 200px;
+  }
+  .contactanos-metodos-online h3 {
+    font-size: 20px;
+  }
+  .formulario {
+    font-size: 10px;
+  }
+  .enviar {
+    font-size: 15px;
+  }
+  .formulario-mensaje textarea {
+    height: 130px;
+    width: 80%;
+  }
+  .formulario-correo,
+  .formulario-nombre {
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  .formulario-correo input,
+  .formulario-nombre input {
+    padding: 5px 5px;
+    font-size: 10px;
+  }
+  .contactanos-metodos-presencial {
+    height: 330px;
+    width: 200px;
+  }
+  .contactanos-metodos-presencial h3 {
+    font-size: 20px;
+  }
+  .contactanos-metodos-presencial p {
+    font-size: 13px;
+  }
+  /* Cambio al ancho de menu hamburguesa y font-size */
+  .navbar-list {
+    width: 200px;
+  }
+  .navbar-list li > a {
+    font-size: 16px;
+  }
+}
+/* Cambios en el menu hamburguesa para celulares en horizontal */
+@media (max-height: 610px) {
+  .navbar-list li > a {
+    font-size: 16px;
+  }
+}
+/* Cambio en el sentido del menu hamburguesa */
+@media (max-height: 420px) {
+  .navbar-list {
+    width: 100%;
+    height: calc(100vh - 120px);
+    flex-direction: row;
+    border-left: none;
+    gap: 25px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+  }
+  .navbar-list li > a {
+    font-size: 25px;
+  }
+}
+/* Pagina se despliega correctamente hasta anchos de 280px */
