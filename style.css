@@ -464,6 +464,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 20px;
   width: 50%;
 }
 .about-us-text h2 {
