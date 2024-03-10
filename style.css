@@ -27,7 +27,7 @@ html {
 }
 /* Seteo de fondo */
 body {
-  background-image: linear-gradient(
+  background: linear-gradient(
     to right bottom,
     #000000,
     #030001,
